@@ -1,0 +1,128 @@
+.navigation {
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 100px;
+    justify-content: space-between;
+    background-color: rgba(5, 4, 4, 0.4);
+    border-bottom: 1px solid rgba(71, 69, 69, 0.6);
+}
+
+.navigationItems {
+    box-sizing: border-box;
+    width: 690px;
+    margin-top: 40px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.items {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.items::after {
+    content: "";
+    opacity: 0;
+    width: 100px;
+    height: 1px;
+    background: #585752;
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 1;
+}
+
+.items:hover::after {
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+
+.navigationItems :hover {
+    cursor: pointer;
+    opacity: .8;
+    transition: opacity .1s linear;
+}
+
+@media screen and (max-width: 1025px) {
+    .navigation {
+        width: 80%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .navigationItems {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .items {
+        font-size: 20px;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 769px) {
+    .navigation {
+        width: 750px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center;
+    }
+    .navigationItems {
+        width: 700px;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .items {
+        font-size: 20px;
+        width: 30%;
+    }
+    .items::after {
+        display: none;
+    }
+    .logo{
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 415px) {
+    .navigation {
+        width: 400px;
+    }
+    .navigationItems {
+        width: 400px;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .items {
+        font-size: 25px;
+        width: 50%;
+    }
+    .items::after {
+        display: none;
+    }
+    .logo{
+        width: 300px;
+        margin: 0 auto;
+    }
+}

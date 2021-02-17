@@ -1,0 +1,97 @@
+.benefitsItem {
+    width: 330px;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.benefitsItem :hover {
+    color: rgba(255, 255, 255, 1);
+    transition: color .8s;
+    cursor: pointer;
+}
+
+.benefitsText {
+    min-width: 150px;
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.benefitsNumber {
+    padding-top: 5px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.positionBenefits {
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+@media screen and (max-width: 1025px) {
+    .benefitsItem {
+        display: flex;
+        align-items: center;
+        position: absolute;
+    }
+
+    .positionBenefits {
+        width: 700px;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .benefitsItem {
+        display: flex;
+        align-items: center;
+        position: absolute;
+    }
+
+    .positionBenefits {
+        width: 700px;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .benefitsText {
+        font-size: 20px;
+    }
+
+    .benefitsNumber {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .benefitsItem {
+        display: flex;
+        align-items: center;
+    }
+    .positionBenefits {
+        width: 350px;
+        top: 30px;
+        display: flex;
+        justify-content: start;
+    }
+
+    .benefitsText {
+        font-size: 20px;
+    }
+
+    .benefitsNumber {
+        font-size: 25px;
+    }
+}

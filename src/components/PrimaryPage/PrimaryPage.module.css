@@ -1,0 +1,89 @@
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.startJourney {
+    left: 0;
+    top: 300px;
+    position: relative;
+}
+
+.startJourney :hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.lineToRocket {
+    left: 181.5px;
+    top: 270px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1025px) {
+    body {
+        background-image: url(/../sagirov/src/img/backgroundWithoutTitle.png);
+    }
+
+    .container {
+        width: 750px;
+        box-sizing: border-box;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .startJourney {
+        left: 265px;
+        top: 450px;
+        transform: scale(1.3);
+        position: absolute;
+    }
+
+    .lineToRocket {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 769px) {
+      .container {
+        width: 750px;
+        box-sizing: border-box;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .startJourney {
+        left: 265px;
+        top: 300px;
+        transform: scale(1.3);
+        position: absolute;
+    }
+
+    .lineToRocket {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .container {
+        width: 80%;
+        box-sizing: border-box;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .startJourney {
+        left: 60px;
+        top: 330px;
+        transform: scale(1.1);
+        position: absolute;
+    }
+
+    .lineToRocket {
+        display: none;
+    }
+}
